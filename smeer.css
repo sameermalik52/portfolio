@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  body {background-color: #313131;
+    color: aliceblue;
+    height: 100vh;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;}
+    
+  .footer {  
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    width: 95%;  
+    background-color: gray;  
+    color: white;  
+    text-align: center;  
+    }
+  nav a{
+    float: right;}
+  h2::before{
+    width: 50%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(250, 156, 49);
+    outline: none;
+    border: none;
+    align-items: center;
+    margin: auto;
+  }
+  .aj{
+    text-align: right;
+    align-items: center;
+  }
+  table,
+  td,
+  th {
+    border: 1px solid #595959;
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    padding: 3px;
+    width: min-content;
+    height: 25px;
+  }
+  td {
+    padding: 0 30px;
+  }
+  th {
+    background: #f0e6cc;
+  }
+  .even {
+    background: #fbf8f0;
+  }
+  .odd {
+    background: #fefcf9;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sameer {
+    color: white;
+    text-decoration: none;
+  }
+ 
+  nav{
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.malik{
+    min-height: 100vh;
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    margin-left: 20vh;
+}
+.task {
+    display: flex;
+    height: 100%;
+  }
+  .task > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .light-text {
+    color: rgb(143, 149, 155);
+  }
+  .pt-10 {
+    padding-top: 10px;
+  }
+  .pb-10 {
+    padding-bottom: 10px;
+  }
+   .list {
+    list-style-type: none;
+  }
+ 
+nav {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+    nav {
+      display: block;
+      position: fixed;
+      background-color: #313131;
+      width: 100%;
+      padding: 10px;
+      text-align: end;
+    }
+    .task{
+      height: 100%;
+      display: block;
+      width: 100vw;
+    }
+  
+    .left-section {
+      display: none !important;
+    }
+    nav{
+      display: block;
+      transform: translateX(-300px);
+      transition: 0.5s ease-in-out;
+      position: absolute;
+      width: 280px;
+      height: 100vh;
+      background-color: #313131;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .right-section {
+    width: calc(100vw - 350px);
+    height: 100vh;
+    background-color: rgb(56, 57, 58);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .malik > div {
+    width: 70%;
+  }
+  #about {
+    overflow: scroll;
+  }
+  #skill {
+    text-align: center;
+  }
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  .project-container img {
+    height: 200px;
+    width: 300px;
+    margin: 4px;
+    border-radius: 4px;
+  
+    background-color: aliceblue;
+  }
+  .education-item {
+    background-color: rgb(57, 61, 63);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    width: 70vh;
+  }
+  .education-item h4 {
+    font-weight: 400;
+    color: rgb(250, 156, 49);
+  }
+  @media screen and (max-width: 850px) {
+    .project-container img {
+      height: 200px;
+      width: 200px !important;
+      margin: 4px;
+      border-radius: 4px;
+      background-color: aliceblue;
+    }
+    .right-section {
+      width: calc(100vw);
+    }
+    .project-container img {
+      height: 200px;
+      width: 200px !important;
+      margin: 4px;
+      border-radius: 4px;
+      background-color: aliceblue;
+    }
+  }
+  .left-section{
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(57, 61, 63);
+}
+.left-section > div {
+    margin: 35px 0;
+}
+.left-section{
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(57, 61, 63);
+}
+.left-section > div {
+    margin: 35px 0;
+}
+.img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    color: rgb(255, 255, 255);
+}
+.left-section ul {
+list-style-type: none ;
+}
+.left-section ul  li {
+    background-color: #4f5861;
+    width: 250px;
+    
+    padding: 8px;
+    margin: 6px;
+    border-radius: 18px;
+}
+.left-section ul  li:hover{
+    background-color: rgb(250, 156, 49);
+    color: rgb(117, 66, 0);
+    font-weight: 500;
+}
+ h2,h3{
+    font-size: 28px;
+    color: rgb(250, 156, 49);
+    text-align: top;
+}
+.malik.me{
+  min-height: 100vh;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
